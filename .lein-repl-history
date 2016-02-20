@@ -1,0 +1,201 @@
+connect xoxp-13475167520-13479938869-22305030101-6796865f6d https://theguise.slack.com/messages/general/details/
+(connect xoxp-13475167520-13479938869-22305030101-6796865f6d https://theguise.slack.com/messages/general/details/)
+(connect "xoxp-13475167520-13479938869-22305030101-6796865f6d" "https://theguise.slack.com/messages/general/details/")
+(clj-slack-client.core/connect 'xoxp-13475167520-13479938869-22305030101-6796865f6d 'https://theguise.slack.com/messages/general/details/)
+(clj-slack-client.core/connect "xoxp-13475167520-13479938869-22305030101-6796865f6d" "https://theguise.slack.com/messages/general/details/")
+asd
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+exit
+test
+s
+test
+(def test (http/get "https://api.slack.com/methods/rtm.start" json-package))
+test
+(printf test)
+(printf @test)
+test
+(str test)
+(str @test)
+(printf (str @test))
+((str/split @test #"wss") 1)
+((string/split @test #"wss") 1)
+(use 'clojure.string)
+(use 'clojure.string :as str)
+(use 'clojure.string :as string)
+((clojure.string/split @test #"wss") 1)
+((clojure.string/split (str @test) #"wss") 1)
+((clojure.string/split (str @test) #"wss") 2)
+((clojure.string/split (str @test) #"wss") 0)
+((clojure.string/split (str @test) #"wss") 1)
+((clojure.string/split (str @test) #"\"url\" : \"wss:") 1)
+((clojure.string/split (str @test) #"\"url\" : \"wss") 1)
+((clojure.string/split (str @test) #"\"url\" : ") 1)
+((clojure.string/split (str @test) #"\"url\" \: ") 1)
+((clojure.string/split (str @test) #"\"url\ ") 1)
+((clojure.string/split (str @test) #"url") 1)
+((clojure.string/split (str @test) #'"url" : "wss:') 1)
+((clojure.string/split (str @test) #'"url" :') 1)
+((clojure.string/split (str @test) #'"url"') 1)
+((clojure.string/split (str @test) #'url') 1)
+((clojure.string/split (str @test) #"url") 1)
+((clojure.string/split (str @test) #"url") 10)
+((clojure.string/split (str @test) #"url") 12)
+((clojure.string/split (str @test) #"url") 15)
+((clojure.string/split (str @test) #"url") 16)
+((clojure.string/split (str @test) #"wss") 2)
+((clojure.string/split (str @test) #"wss") 1)
+exit
+(http/get "https://slack.com/api/rtm.start" json-package)
+(http/get "https://slack.com/api/rtm.start" (json-package))
+(http/get "https://slack.com/api/rtm.start" option)
+(http/get "https://slack.com/api/rtm.start" options)
+(def js (http/get "https://slack.com/api/rtm.start" options))
+@js
+(def js (http/get "https://slack.com/api/rtm.start" (json-package)))
+@js
+exit
+@wss
+exit
+(http/get "https://slack.com/api/rtm.start" token)
+(http/get "https://slack.com/api/rtm.start" 'token)
+(http/post "https://slack.com/api/rtm.start" token)
+(http/post "https://slack.com/api/rtm.start" "asd")
+(require '[clj-http.client :as client])
+exit
+(require '[clj-http.client :as client])
+(client/get "https://slack.com/api/rtm.start" token)
+(client/get "https://slack.com/api/rtm.start" {token token})
+(client/get "https://slack.com/api/rtm.start" {"token" token})
+(client/get "https://slack.com/api/rtm.start" {token})
+(client/get "https://slack.com/api/rtm.start" {:token token})
+(http/get "https://slack.com/api/rtm.start" {:token token})
+@(http/get "https://slack.com/api/rtm.start" {:token token})
+(client/get "https://slack.com/api/rtm.start" (json-package token))
+(client/get "https://slack.com/api/rtm.start" (json-package))
+(slurp (str "https://slack.com/api/rtm.start?token=" token))
+(println (str "https://slack.com/api/rtm.start?token=" token))
+(println (str "https://slack.com/api/rtm.start?" token))
+(slurp (str "https://slack.com/api/rtm.start?" token))
+(split (slurp (str "https://slack.com/api/rtm.start?" token)) #"wss")
+((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 1)
+((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2)
+(split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) "websocket\\")
+(split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) "websocket")
+(split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\")
+((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 2)
+((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 1)
+(split ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 1) #"\")
+((split ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 1) #"\") 0)
+((split ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 1) #"\\") 0)
+((split ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"websocket\\") 1) #"[\]") 0)
+(split (slurp (str "https://slack.com/api/rtm.start?" token)) #"wss")
+((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 1)
+((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2)
+(split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]")
+((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2)
+(filter (fn [x] (= x \\) ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2)))
+@(filter (fn [x] (= x \\) ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2)))
+(str (filter (fn [x] (= x \\) ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2))))
+(str @(filter (fn [x] (= x \\) ((split ((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2))))
+(string/replace ((split((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2) "\\" "")
+(use 'clojure.string)
+(clojure.string/replace ((split((split (slurp (str "https://slack.com/api/rtm.start?" token)) #"url") 2) #"[\"]") 2) "\\" "")
+exit
+wss
+(start-socket wss)
+exit
+(slurp ~/resources/token.txt
+(slurp resources/token.txt
+)
+(slurp /resources/token.txt
+(slurp "/resources/token.txt")
+(slurp "~/token.txt")
+(slurp "resources/token.txt")
+(clojure.string/replace (slurp "resources/token.txt") "\n" "")
+exit
+(clojure.string/replace (slurp "resources/token.txt") "\n" "")
+token
+(def token (clojure.string/replace (slurp "resources/token.txt") "\n" "")
+)
+exit
+(start-socket wss)
+options
+exit
+(start-socket wss)
+exit
+(start-socket
+)
+(start-socket wss
+)
+exit
+(start-socket wss)
+@messages
+exit
+(start-socket wss)
+@messages
+exit
+(start-socket wss)
+exit
+(start-socket wss)
+messages
+@messages
+(json/write-str @messages)
+(json/write-str (replace @messages "\\" ""))
+(json/write-str (replace @messages #"[\\]" ""))
+(get (json/write-str (replace @messages #"[\\]" "")) type)
+(get (json/write-str (replace @messages #"[\\]" "")) "type")
+(get (json/write-str (replace @messages #"[\\]" "")) "\"type\":")
+(json/write-str (replace @messages #"[\\]" ""))
+(json/write-str @messages)
+(get (json/write-str @messages) "type\\"
+)
+(get (json/read-str @messages) "type\\"
+(get (json/read-str @messages) "type)
+)
+))
+"
+)
+(get (json/read-str @messages) "type"))
+(json/read-str @messages)
+(get (json/read-str @messages) type))
+asd
+(get (json/read-str @messages) :type))
+((json/read-str @messages) :type))
+(get (json/read-str @messages) :type)
+(get (json/read-str @messages) type)
+(get (json/read-str @messages) "type")
+exit
+(start-socket wss)
+@15152ms
+exit
+(start-socket wss)
+exit
+(start-socket wss)
+(send "test")
+(ws/send-msg socket "hello")
+exit
+(send "hello")
+(ws/send-msg socket "hello")
+exit
+(send "wh")
+exit
+(send "aw")
+exit
+(send "sååå funkar det här?")
+(send "japp woopwoop!")
+exit
