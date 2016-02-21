@@ -46,7 +46,10 @@
       (cond
         (= ((split msg #" ") 0) "!channel") (recur ((split msg #" ") 1))
         (= ((split msg #" ") 0) "!exit") (close-socket)
-        :else (do (send msg)
+        (= ((split msg #" ") 0) "!info") (do 
+                                           (println channel)
+                                           (recur channel))
+        :else (do (send msg channel)
                   (recur channel))))))
 
 
