@@ -28,17 +28,26 @@
                 wss
                 :on-receive #(handle-message %)))
 ;
-(defn send [msg]
+
+(defn send [msg channel]
     (ws/send-msg socket (json/write-str {
                          :id 1
                          :type "message"
-                         :channel "C0DDXU6RL"
+                         :channel channel
                          :text msg
                         } )))
 
-
 (defn close-socket []
       (ws/close socket))
+  
+(defn connection []
+  (loop [channel "C0DDXU6RL"]
+    (let [msg (read-line)]
+      (cond
+        (= ((split msg #" ") 0) "!channel") (recur ((split msg #" ") 1))
+        (= ((split msg #" ") 0) "!exit") (close-socket)
+        :else (do (send msg)
+                  (recur channel))))))
 
 
 

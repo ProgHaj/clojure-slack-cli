@@ -199,3 +199,4 @@ exit
 (send "sååå funkar det här?")
 (send "japp woopwoop!")
 exit
+(connection)
